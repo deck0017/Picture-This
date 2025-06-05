@@ -14,16 +14,56 @@
     <h4>My Really Cool Blog Post!</h4>
   </div>
 
-  <!-- Small images then large images -->
 <picture>
-  <source srcset="images/museum-320x.jpg 320w, images/museum-480x.jpg 480w, 
-                  images/museum-720x.jpg 720w, images/museum-960x.jpg 960w, 
-                  images/museum-1280x.jpg 1280w, images/museum-1920x.jpg 1920w, 
-                  images/museum-2880x.jpg 2880w"
-          sizes="(max-width: 960px) 80vw, 100vw"
-          sizes="(min-width: 960px) 400px, 100vw">
-  <img src="images/museum.jpg" alt="Museum Image" class="responsive-img">
+    <source srcset="images/museum-320x.jpg
+                    images/museum-640x.jpg 2x,
+                    images/museum-960x.jpg 3x"
+            media="(max-width: 320px)"/>
+
+    <source srcset="images/museum-480x.jpg,
+                   images/museum-960x.jpg 2x,
+                   images/museum-1440x.jpg 3x"
+            media="(max-width: 480px)"/>
+            
+            
+    <source srcset="images/museum-720x.jpg,
+                   images/museum-1440x.jpg 2x,
+                   images/museum-2160x.jpg 3x"
+            media="(max-width: 720px)"/>
+
+    <source srcset="images/museum-959x.jpg,
+                    images/museum-1920x.jpg 2x,
+                    images/museum-2880x.jpg 3x"
+            media="(max-width: 959px)"/>
+
+
+            <!-- This is for square images -->
+
+              <source srcset="images/museum-480x480.jpg,
+                    images/museum-960x960.jpg 2x,
+                    images/museum-1440x1400.jpg 3x"
+            media="(max-width: 960px)"/>
+
+            <source srcset="images/museum-640x640.jpg,
+                    images/museum-1280x1280.jpg 2x,
+                    images/museum-1920x1920.jpg 3x"
+            media="(max-width: 1280px)"/>
+
+               <source srcset="images/museum-800x800.jpg,
+                    images/museum-1600x1600.jpg 2x,
+                    images/museum-2400x2400.jpg 3x"
+            media="(max-width: 1600px)"/>
+
+
+
+
+    <img class="orig-img"
+         src="images/museum.jpg"
+         alt="Life size person built from grey Lego bricks standing
+              next to partially completed lego people">
 </picture>
+
+
 
 </header>
 
